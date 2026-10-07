@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EIRA JEWELS — Shop Jewellery</title>
+  <meta name="description" content="Discover EIRA JEWELS. Shop rings, earrings, necklaces, mangalsutras, Polki jewellery and bangles in the signature warmth of EIRA.">
+  <meta name="keywords" content="EIRA JEWELS, Indian fine jewellery, 22K gold jewellery, Polki choker, diamond mangalsutra, solitaire ring India, BIS 916 hallmark, Jaipur jewellery, uncut diamond chandbali">
+
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="storefront.css">
+</head>
+<body>
+
+  <aside class="top-bar" aria-label="Store announcement"><div class="top-bar-center"><span class="sparkle-star" aria-hidden="true">✦</span><span>EIRA JEWELS · Discover your signature piece</span><span class="sparkle-star" aria-hidden="true">✦</span></div><span class="currency-badge">₹ INR</span></aside>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="mainMenu"><li><a href="#catalog" class="nav-link">Shop All</a></li><li><a href="#categories" class="nav-link">Categories</a></li><li><a href="#catalog" class="nav-link" data-shop-category="rings">Rings</a></li></ul>
+      </nav>
+
+      <a href="#hero" class="brand-logo-wrap" aria-label="EIRA JEWELS home"><span class="brand-logo-image" role="img" aria-label="EIRA JEWELS"></span></a>
+
+      <div class="header-actions">
+        
+        <button id="searchToggleBtn" class="action-btn" aria-label="Search Catalog" title="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button id="wishlistToggleBtn" class="action-btn" aria-label="Saved Pieces" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+          </svg>
+          <span id="wishlistCountBadge" class="badge-count" style="display: none;">0</span>
+        </button>
+
+        <button id="cartToggleBtn" class="action-btn" aria-label="Jewellery Box" title="Jewellery Box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span id="cartCountBadge" class="badge-count" style="display: none;">0</span>
+        </button>
+
+        <button class="action-btn mobile-menu-btn" aria-label="Toggle Mobile Menu" id="mobileMenuBtn" aria-controls="mainMenu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div id="searchDrawer" class="search-drawer" aria-hidden="true">
+      <div class="search-inner">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--gold-primary)" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" aria-label="Search products" class="search-input" placeholder="Search rings, earrings, necklaces…" autocomplete="off">
+          <button id="searchCloseBtn" class="close-btn" aria-label="Close Search">✕</button>
+        </div>
+        <div id="searchResultsPreview" class="search-results-preview"></div>
+      </div>
+    </div>
+  </header>
+
+  <a class="skip-link" href="#catalog">Skip to products</a><main>
+
+    <section class="hero-section" id="hero">
+      
+      <div class="brand-watermark hero-brand-watermark" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
+        
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span class="sparkle-star">✦</span> The EIRA Collection
+          </div>
+          <h1 class="hero-title">
+            The Eternal Fire of <br>
+            <span class="gold-foil-text">Starlight & Pure Gold</span>
+          </h1>
+          <p class="hero-description">Discover rings, earrings, necklaces and bangles in the signature warmth of EIRA. Find a piece for every occasion.</p>
+          <div class="hero-cta-group">
+            <a href="#catalog" class="btn-gold">
+              <span>Shop The Collection</span>
+              <span>⟶</span>
+            </a>
+            <a href="#categories" class="btn-outline-gold">
+              <span>Browse Categories</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-frame">
+          <div class="hero-img-blended-wrapper blended-vignette">
+            <img src="assets/images/indian-hero.jpg" alt="Regal Indian woman wearing EIRA 22K gold Polki choker and diamond star earrings" width="720" height="405" />
+          </div>
+          <div class="hero-floating-hallmark"><span class="bis-triangle-symbol" aria-hidden="true">✦</span><div><h4 class="hero-note-title">The EIRA signature</h4><p class="hero-note-text">Warm gold. Celestial details. Timeless form.</p></div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="categories-section" id="categories">
+      <div class="brand-watermark categories-brand-watermark" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-label">Discover EIRA</div>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-desc">Explore six collections, from everyday signatures to occasion pieces.</p>
+        
+        <div class="categories-grid">
+
+          <a class="category-card" href="#catalog" data-shop-category="polki">
+            <img src="assets/images/indian-hero.jpg" alt="Royal Jadau and Polki Heirlooms" loading="lazy" />
+            <div class="category-overlay">
+              
+              <h3 class="category-title">Jadau & Polki Heirlooms</h3>
+              
+              <span class="category-link-text">Shop Collection ⟶</span>
+            </div></a>
+
+          <a class="category-card" href="#catalog" data-shop-category="chandbalis">
+            <img src="assets/images/chandbali.jpg" alt="Chandbalis and Jhumkas" loading="lazy" />
+            <div class="category-overlay">
+              
+              <h3 class="category-title">Chandbalis & Drops</h3>
+              
+              <span class="category-link-text">Shop Collection ⟶</span>
+            </div></a>
+
+          <a class="category-card" href="#catalog" data-shop-category="rings">
+            <img src="assets/images/ring-celestial.jpg" alt="Solitaires and Cocktail Rings" loading="lazy" />
+            <div class="category-overlay">
+              
+              <h3 class="category-title">Solitaires & Rings</h3>
+              
+              <span class="category-link-text">Shop Collection ⟶</span>
+            </div></a>
+
+          <a class="category-card" href="#catalog" data-shop-category="mangalsutras">
+            <img src="assets/images/mangalsutra.jpg" alt="Modern Celestial Mangalsutras" loading="lazy" />
+            <div class="category-overlay">
+              
+              <h3 class="category-title">Celestial Mangalsutras</h3>
+              
+              <span class="category-link-text">Shop Collection ⟶</span>
+            </div></a>
+
+          <a class="category-card" href="#catalog" data-shop-category="neckpieces">
+            <img src="assets/images/necklace-starburst.jpg" alt="Haslis and Neckpieces" loading="lazy" />
+            <div class="category-overlay">
+              
+              <h3 class="category-title">Haslis & Neckpieces</h3>
+              
+              <span class="category-link-text">Shop Collection ⟶</span>
+            </div></a>
+
+          <a class="category-card" href="#catalog" data-shop-category="kadas">
+            <img src="assets/images/bangle-constellation.jpg" alt="Kadas and Bangles" loading="lazy" />
+            <div class="category-overlay">
+              
+              <h3 class="category-title">Kadas & Bangles</h3>
+              
+              <span class="category-link-text">Shop Collection ⟶</span>
+            </div></a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="catalog">
+      <div class="container">
+        
+        <div class="catalog-header">
+          <div class="section-label">Curated Catalogue</div>
+          <h2 class="section-title">The EIRA Collection</h2>
+          <p class="section-desc">Explore the collection. View each piece for materials, dimensions and available sizes.</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="category-pills">
+            <button class="pill-btn active" data-category="all">All Jewellery</button>
+            <button class="pill-btn" data-category="polki">Jadau & Polki</button>
+            <button class="pill-btn" data-category="rings">Solitaires & Rings</button>
+            <button class="pill-btn" data-category="chandbalis">Chandbalis & Drops</button>
+            <button class="pill-btn" data-category="neckpieces">Haslis & Neckpieces</button>
+            <button class="pill-btn" data-category="mangalsutras">Modern Mangalsutras</button>
+            <button class="pill-btn" data-category="kadas">Kadas & Bangles</button>
+          </div>
+
+          <div class="filter-sort-controls">
+            <label for="sortSelect" style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Sort by:</label>
+            <select id="sortSelect" class="custom-select">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High (₹)</option>
+              <option value="price-high">Price: High to Low (₹)</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <p id="productResultsCount" class="results-count" role="status" aria-live="polite"></p><button id="clearWishlistFilter" class="clear-filter" hidden>Show all jewellery</button><div id="productsGrid" class="products-grid">
+          
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top-grid"><div class="footer-brand"><a href="#hero" class="footer-logo" aria-label="EIRA JEWELS home"><span class="brand-logo-image" role="img" aria-label="EIRA JEWELS"></span></a><p>Jewellery with a celestial signature.<br>Discover your next EIRA piece.</p></div><div class="footer-col"><h4>Shop EIRA</h4><ul class="footer-links"><li><a href="#catalog">All Jewellery</a></li><li><a href="#catalog" data-shop-category="rings">Rings</a></li><li><a href="#catalog" data-shop-category="chandbalis">Earrings</a></li><li><a href="#catalog" data-shop-category="neckpieces">Necklaces</a></li></ul></div><div class="footer-col"><h4>Your Collection</h4><ul class="footer-links"><li><button data-open-saved>Saved Pieces</button></li><li><button data-open-bag>Shopping Bag</button></li><li><a href="#categories">Browse Categories</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 EIRA JEWELS. All rights reserved.</span><span>Prices shown in ₹ INR</span></div></div></footer>
+
+  <div id="cartOverlay" class="cart-overlay" aria-hidden="true">
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" tabindex="-1">
+      <div class="cart-header">
+        <h3 id="cartTitle">Your Shopping Bag</h3>
+        <button id="cartCloseBtn" class="close-btn" aria-label="Close Bag">✕</button>
+      </div>
+
+      <p class="bag-notice">Your selected pieces and sizes are saved in this browser.</p>
+      <div id="cartItemsList" class="cart-items-list">
+        
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span class="cart-subtotal-label">Subtotal</span>
+          <span id="cartSubtotalAmt" class="cart-subtotal-amt">₹0</span>
+        </div>
+        <button id="checkoutBtn" disabled aria-describedby="checkoutNotice" class="btn-gold checkout-btn">
+          <span>Checkout Coming Soon</span>
+          <span>✦</span>
+        </button>
+        <p id="checkoutNotice" class="checkout-notice">Online checkout is not available yet. Your bag will stay saved.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div id="quickViewOverlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle" tabindex="-1">
+      <button id="quickViewCloseBtn" class="modal-close-btn" aria-label="Close Preview">✕</button>
+      
+      <div class="modal-img-col">
+        <img id="modalProductImg" alt="" />
+      </div>
+
+      <div class="modal-info-col">
+        <span id="modalProductCat" style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-antique); margin-bottom: 8px; font-weight: 600;">Category</span>
+        <h3 id="modalProductTitle" style="font-family: var(--font-logo); font-size: 1.5rem; color: var(--text-noir); margin-bottom: 10px; font-weight: 600;">Product Name</h3>
+        <span id="modalProductPrice" style="font-family: var(--font-logo); font-size: 1.5rem; color: var(--gold-deep); font-weight: 700; margin-bottom: 1.2rem;">₹0</span>
+        <p id="modalProductDesc" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">Product Description</p>
+        
+        <div id="modalProductSpecs" style="font-size: 0.82rem; color: var(--text-muted); background: var(--bg-warm); padding: 1.1rem; border-radius: 2px; margin-bottom: 1.5rem; border: 1px solid var(--gold-border-light); line-height: 1.6;">
+          Specifications
+        </div>
+
+        <div style="margin-bottom: 1.8rem;">
+          <label for="modalSizeSelect" style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-noir); margin-bottom: 6px;">Select size:</label>
+          <select id="modalSizeSelect" class="custom-select" style="width: 100%;">
+            
+          </select>
+        </div>
+
+        <button id="modalAddBtn" class="btn-gold" style="width: 100%; justify-content: center;">
+          <span>Add to Bag</span>
+          <span>✦</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
